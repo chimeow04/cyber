@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1">
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
+    <title>ME</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="4.js"></script>
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp=AdobeAn.getComposition("2E1B7E81B0465441943D9391C6569D4B");
+            var lib=comp.getLibrary();
+            handleComplete({},comp);
+        }
+        function handleComplete(evt,comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib=comp.getLibrary();
+            var ss=comp.getSpriteSheet();
+            exportRoot = new lib._4();
+            stage = new lib.Stage(canvas);	
+            //Registers the "tick" event listener.
+            fnStartAnimation = function() {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }	    
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+        </script>
+</head>
+<body onload="init();" style="margin:0px;">
+    <header class="header">
+        <div class="wrapper">
+            <div class = "header_wrapper">
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 1</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 2</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 3</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 4</a>
+                        </li>
+                        <li class="header_item1">
+                        <a href="#!" class="header_link1">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 5</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 6</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 7</a>
+                        </li>
+                        <li class="header_item">
+                        <a href="#!" class="header_link">РАБОТА 8</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+   <main>
+        <div class="main">
+            <div id="name_page">ВИДЕОРОЛИК</div>
+            <div class="item_content">
+                <div class="video">
+                    <canvas id="canvas" width="785" height="400">
+                    <iframe src="4.html"  width="785px" height="400px"></iframe>
+                    </canvas>
+                </div>
+                <div class="text1">
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    </P>
+                </div>
+                
+            </div>
+            <div id="name_page1">ВПЕЧАТЛЕНИЯ И ИДЕЯ</div>
+            <div class="item_content2">
+                <div class="text2">
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    </P>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    </P>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div class="social_icons">
+                <a href="#"> <img src="../site2/images/Social Icons.svg" alt="vk"></a>
+                <a href="#"> <img src="../site2/images/Social Icons2.svg" alt="tg"></a>
+                <a href="#"> <img src="../site2/images/Social Icons3.svg" alt="ds"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
