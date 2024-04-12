@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang= "ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devic-width, initial-scale=1">
+        <title>Войти</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style3.css">
+    </head>
+    <body>
+        <header>
+            <div class="item_header">
+                <div class="header_logo">
+                <a href="index.html" class="header_logo_link"><img src="images/лого.png" alt="1play" class="header_logo_p"></a>
+            </div>
+    
+            <nav class="header_nav">
+                <ul class="nav custom-menu">
+                    <li class="nav-item">
+                        <div class="header_search">
+                            <input type="text" class="search_text" placeholder="поиск">
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link" href="#!" >ИГРАТЬ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#!" >ТУРНИРЫ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#!" >СТРИМЫ</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#!" >ЛАДДЕР</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="header_btn_prem">
+                            <a class="header_link1" href="#!" >ПРЕМИУМ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="header_prof">
+                            <a class="nav-link1 "  href="#!" >ПРОФИЛЬ</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="custom-block">
+                            <p class="custom-text"> ВОЙТИ В АККАУНТ</p>
+                            <div class="form-group">
+                                <div class="fields">
+                                    <label for="emailField" style="color: rgba(255, 255, 255, 0.67); font-family: Montserrat;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal">Ваш e-mail:</label>
+                                    <input type="email" class="form-control" id="emailField">
+                                    <div class="form-group1"><label for="passwordField" style="color: rgba(255, 255, 255, 0.67); font-family: Montserrat;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal">Ваш пароль:</label>
+                                        <input type="password" class="form-control" id="passwordField">
+                                    </div>
+                                </div>
+                                <div id= "button1" class="button_1" style="margin-top: 63.31px;">
+                                        <a href="index2.html" class="header_logo_link btn btn-primary"><span class="text_entrance">ВОЙТИ</span>
+                                        </a>
+                                </div>
+                                <hr>
+                                <div class="button_2" style="margin-top: 48.52px;">
+                                    <button class="btn btn-secondary">
+                                        <span class="text_entrance">РЕГИСТРАЦИЯ</span>
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#button1').click(function() { // Замените 'loginButton' на ID вашей кнопки
+                    var emailValue = $('#emailField').val();
+                    var passwordValue = $('#passwordField').val();
+        
+                    // Проверка на пустоту полей
+                    if (emailValue === '' || passwordValue === '') {
+                        alert('Заполните все поля!');
+                        return false; // Предотвращаем отправку формы
+                    }
+        
+                    // Проверка формата электронной почты
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(emailValue)) {
+                        alert('Введите корректный адрес электронной почты!');
+                        return false;
+                    }
+        
+                    // Другие проверки, например, для пароля
+        
+                    // Если все проверки пройдены, форму можно отправить
+                    $('form').submit();
+                });
+            });
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <footer>
+            <div class="item_footer"><span id="copy"> &copy; "1PLAY" 2023</span>
+            </div>
+        </footer>
+    </body>
+
+</html>

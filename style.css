@@ -1,0 +1,361 @@
+/* montserrat-100 - cyrillic */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/montserrat-v26-cyrillic-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-200 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/montserrat-v26-cyrillic-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-300 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-cyrillic-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-cyrillic-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-cyrillic-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v26-cyrillic-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-900 - cyrillic */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v26-cyrillic-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    background: #282E4E;
+    flex-shrink: 0;
+    position:static;
+    top: 0;
+    left: 0;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_logo{
+    margin-right: 143.27px;
+}
+
+.header_search{
+    width: 325px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-shrink: 0;
+    background-color: #576D8F70;
+    border-radius: 35px;
+    margin-right: 114px;
+    color: rgba(255, 255, 255, 0.42);
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.header_search:hover{
+    color: rgba(0, 0, 0, 0.62);
+    background: rgba(81, 96, 120, 0.44);
+}
+.header_search input{
+    display: flex;
+    width: 100%;
+    height: 36.514px;
+    border: none;
+    transition: 0.3s;
+}
+input[type="text"]:hover::placeholder {
+    color: rgba(0, 0, 0, 0.62);
+    transition: 0.3s;
+}
+.search_text{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.42);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    transition: 0.3s;
+
+}
+
+.header_list{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 7px;
+}
+.header_list a .header_link:active, .header_list a .header_link:focus{
+    color: #07C7A8;
+}
+
+.header_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-right: 7px;
+}
+.header_link:hover{
+    color: #07C7A8;
+}
+.header_link1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 0;
+margin-left: 2px;
+}
+.header_btn_prem{
+    margin-left: 97.48px;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #37BBA3 8.26%, #9533C3 114.46%);
+    display: inline-block;
+    padding: 6.5px 15px;
+    margin-right: 7px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+}
+.header_btn_prem:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+.header_prof{
+    margin-left: 108px;
+    
+}
+
+.header_item{
+    display: inline-block;
+    margin-right: 40.49px;
+
+}
+.btn_play_p{
+    width: 151.586px;
+    height: 147.005px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 546px;
+    left: 1232px;
+    right: 536.41px;
+    bottom: 994.99px;
+    cursor: pointer;
+    opacity: 1;
+}
+.btn_play_p2{
+    width: 151.586px;
+    height: 147.005px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 546px;
+    left: 1232px;
+    right: 536.41px;
+    bottom: 994.99px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.btn_play_p:hover{
+    opacity: 0;
+}
+.btn_play_p2:hover{
+    opacity: 1;
+}
+#text_btn_play{
+    color: #FFF;
+    height: 47px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 562px;
+    left: 1406px;
+    right: 207px;
+    bottom: 1079px;
+    cursor: pointer;
+}
+#text_btn_players{
+    width: 230px;
+    color: rgba(255, 255, 255, 0.81);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 644px;
+    left: 1406px;
+    right: 284px;
+    bottom: 1016px;
+    cursor: pointer;
+}
+
+.banner{
+    width: 100%;
+    flex-shrink: 0;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.text1_ban{
+    color: #E8E8E8;
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    display: flex;
+    position: relative;
+    padding-top: 15px;
+    width: 415px;
+    margin-left: 150px;
+}
+.text2_ban{
+    color: #E8E8E8;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    display: flex;
+    position: relative;
+    margin-left: 150px;
+}
+.text_20{
+    color: #FFF;
+    text-shadow: 0px 0px 7px #FFF;
+    font-family: 'Montserrat';
+    font-size: 175px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.625px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-left: 510px;
+    margin-bottom: 20px;
+    width: 340px;
+}
+.intro{
+    width: 100%;
+    height: 1247px;
+    flex-shrink: 0;
+    background: url(../images/главная.png) no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    width: 100%;
+    height: 82px;
+    flex-shrink: 0;
+    background: #191D30;
+    display: flex;
+}
+#copy{
+    margin: 0;
+    margin-left: 267px;
+    margin-top: 33px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.49); 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    font-style: normal; 
+    font-weight: 400; 
+    width: 136.056px; 
+    line-height: normal;
+
+}
